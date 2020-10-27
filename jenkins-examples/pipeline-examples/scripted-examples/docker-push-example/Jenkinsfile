@@ -7,7 +7,7 @@ node {
     def buildInfo = Artifactory.newBuildInfo()
 
     stage ('Clone') {
-        git url: 'https://github.com/JFrog/project-examples.git'
+        git url: 'https://github.com/jfrog/project-examples.git'
     }
 
     stage ('Add properties') {
@@ -20,7 +20,7 @@ node {
     }
 
     stage ('Push image to Artifactory') {
-        buildInfo = rtDocker.push ARTIFACTORY_DOCKER_REGISTRY + '/hello-world:latest', 'docker-local'
+        rtDocker.push ARTIFACTORY_DOCKER_REGISTRY + '/hello-world:latest', 'docker-local', buildInfo
     }
 
     stage ('Publish build info') {
