@@ -5,8 +5,11 @@ To set up Jenkins to use the example, read [this](https://github.com/jfrog/proje
 
 * The [aql-example](aql-example) uses a Download Spec which includes [AQL](https://www.jfrog.com/confluence/display/RTF/Artifactory+Query+Language) instead of a wildcard pattern.
 * The [build-scan-example](build-scan-example) demonstrates how to scan published builds with JFrog Xray.
+* The [build-trigger-example](build-trigger-example) demonstrates how to trigger a build when files are added or modified in a specific Artifactory path.
+* The [conan-example](conan-example) resolves dependencies, deploys artifacts and publishes build-info to Artifactory for a Conan build.
 * The [declarative-example](declarative-example) demonstrates how to download, upload and publish build-info to Artifactory using a Declarative Pipeline script.
 * The [docker-push-example](docker-push-example) demonstrates how to push a docker image to Artifactory.
+* The [dotnet-example](dotnet-example) resolves dependencies and publishes build-info to Artifactory for a .NET build.
 * The [exclude-patterns-download-example](exclude-patterns-download-example) demonstrates how to exclude certain files while downloading.
 * The [exclude-patterns-upload-example](exclude-patterns-upload-example) demonstrates how to exclude certain files while uploading.
 * The [go-example](go-example) resolves dependencies, deploys artifacts and publishes build-info to Artifactory for a Go build.
@@ -20,6 +23,8 @@ To set up Jenkins to use the example, read [this](https://github.com/jfrog/proje
 * The [maven-example](maven-example) resolves dependencies, deploys artifacts and publishes build-info to Artifactory for a Maven build.
 * The [npm-container-example](npm-container-example) demonstrates how to run npm in a Docker container.
 * The [npm-example](npm-example) resolves dependencies, deploys artifacts and publishes build-info to Artifactory for a npm build.
+* The [nuget-example](nuget-example) resolves dependencies and publishes build-info to Artifactory for a NuGet build.
+* The [pip-examples](pip-examples) resolves dependencies, deploys artifacts and publishes build-info to Artifactory for a pip build.
 * The [promotion-example](promotion-example) demonstrates how to promote a build in Artifactory.
 * The [props-example](props-example) demonstrates setting/deleting properties on artifacts in Artifactory. Also downloads and uploads files to Artifactory with properties, while using a placeholder when downloading.
 * The [props-single-file-example](props-single-file-example) is the same as the [props-example](props-example), but has the specs embedded inside the Groovy script.
